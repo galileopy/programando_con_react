@@ -9,3 +9,9 @@ export interface Tarea {
 }
 
 export type ListaTarea = Tarea[];
+export type FiltroTarea = Estados;
+
+export interface EstadoLista {
+  lista: ListaTarea;
+  filtro: FiltroTarea;
+}
