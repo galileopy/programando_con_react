@@ -1,24 +1,21 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
-
+import Tareas from "./pages/Tarea";
 export default () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div>
+      <Tareas />
+      <footer className="info">
+        <p>Doble Click para editar una Tarea</p>
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Template by <a href="http://sindresorhus.com">Sindre Sorhus</a>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <p>
+          Creado por <a href="https://galileopy.com">Galileo Sánchez</a>
+        </p>
+        <p>
+          Part of <a href="http://todomvc.com">TodoMVC</a>
+        </p>
+      </footer>
     </div>
   );
 };
